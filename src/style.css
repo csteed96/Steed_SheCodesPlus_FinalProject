@@ -82,6 +82,6 @@ form {
 }
 
 body {
-  background-image: url("rain.jpg");
+  background-image: url("src/rain.jpg");
   background-size: cover;
 }
