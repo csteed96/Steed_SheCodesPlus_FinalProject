@@ -1,0 +1,87 @@
+.left-column {
+  float: left;
+  width: 25%;
+  margin: 25px;
+  padding: 100px;
+  padding-right: 75px;
+  padding-left: 175px;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
+  clear: right;
+}
+.right-column {
+  float: right;
+  width: 25%;
+  margin: 50px;
+  margin-left: 50px;
+  margin-right: 200px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 100px;
+  padding-left: 75px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: aliceblue;
+  border-radius: 35px;
+}
+
+.date-time,
+.current-city {
+  background-color: rgb(252, 65, 50, 0.8);
+  display: inline-block;
+  border-style: outset;
+  border: 3px solid;
+  border-color: black;
+  padding: 15px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.current.city.geo {
+  display: block;
+  margin: 0 auto;
+}
+
+.current-city {
+  font-size: 50px;
+  min-width: 300px;
+  margin-bottom: 10px;
+  display: block;
+}
+.date-time {
+  display: block;
+  min-width: 300px;
+}
+.current-temp {
+  text-align: center;
+  min-width: 300px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  min-width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 35px;
+  background-color: darksalmon;
+  text-align: center;
+  border: 2px solid;
+}
+
+body {
+  background-image: url("rain.jpg");
+  background-size: cover;
+}
