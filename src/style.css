@@ -6,9 +6,10 @@
   border-style: outset;
   border: 3px solid;
   border-color: black;
-  padding: 15px;
-  border-radius: 25px;
+  border-radius: 20px;
   text-align: center;
+  padding-right: 50px;
+  margin-bottom: 50px;
 }
 
 .current-city-geo {
@@ -21,11 +22,10 @@
 .current-city,
 .current-temp {
   font-size: 50px;
-  min-width: 300px;
   margin-bottom: 10px;
-  display: block;
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
+  margin-top: 10px;
 }
 .date-time {
   display: block;
@@ -61,4 +61,8 @@ form {
 body {
   background-image: url(rain.jpg);
   background-size: cover;
+}
+
+.container {
+  margin-top: 100px;
 }
