@@ -1,27 +1,8 @@
-.left-column {
-  float: left;
-  width: 25%;
-  margin: 25px;
-  padding: 100px;
-  padding-right: 75px;
-  padding-left: 175px;
+.col-8 {
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
-  clear: right;
 }
-.right-column {
-  float: right;
-  width: 25%;
-  margin: 50px;
-  margin-left: 50px;
-  margin-right: 200px;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  padding: 100px;
-  padding-left: 75px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+.col-4 {
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -41,7 +22,7 @@
   text-align: center;
 }
 
-.current.city.geo {
+.current-city-geo {
   display: block;
   margin: 0 auto;
 }

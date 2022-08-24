@@ -5,66 +5,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Poppins&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <div class="container">
-    <div class="left-column">
-        <h1 class="current-city" id="city-name">
-            Current City
-        </h1>
-        <h2 class="date-time" id="current-date-time">
-            Date & Time
-        </h2>
-        <h2 class="current-temp">
-            <span id="current-temp">19</span>
-            <span class="units">C°</span>
-        </h2>
-        <form class="change-city" id="search-form">
-            <div>
-                <label for="search">Change Your City</label>
+    <div class="row">
+        <div class="col-7">
+            <h1 class="current-city" id="city-name">
+                Current City
+            </h1>
+            <h2 class="date-time" id="current-date-time">
+                Date & Time
+            </h2>
+            <h2 class="current-temp">
+                <span id="current-temp">19</span>
+                <span class="units">C°</span>
+            </h2>
+            <form class="change-city" id="search-form">
+                <div>
+                    <label for="search">Change Your City</label>
+                </div>
+                <input type="text" name="search" id="city-input" placeholder="Enter your city here" autocomplete="on" />
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+        <div class="col-5">
+            <div class="forecast">
+                <ul>
+                    <li>
+                        <h3>
+                            🌞 Monday (High/Low)
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            ⛈️ Tuesday (high/Low)
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            🌞 Wednesday (High/Low)
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            ⛈️ Thursday (High/Low)
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            🌞 Friday (High/Low)
+                        </h3>
+                    </li>
+                </ul>
             </div>
-            <input type="text" name="search" id="city-input" placeholder="Enter your city here" autocomplete="on" />
-            <input type="submit" value="Search" />
-        </form>
-    </div>
-    <div class="right-column">
-        <div class="forecast">
-            <ul>
-                <li>
-                    <h3>
-                        🌞 Monday (High/Low)
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        ⛈️ Tuesday (high/Low)
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        🌞 Wednesday (High/Low)
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        ⛈️ Thursday (High/Low)
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        🌞 Friday (High/Low)
-                    </h3>
-                </li>
-            </ul>
         </div>
     </div>
     <div class="link">
