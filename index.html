@@ -19,7 +19,7 @@
 </head>
 <div class="container">
     <div class="row">
-        <div class="col-7">
+        <div class="col-6">
             <div class="row first-box">
                 <div class="col current-city" id="city-name">
                     Current City
@@ -28,21 +28,17 @@
                     <span id="current-temp">19</span>
                     <span class="units">C°</span>
                 </div>
-            </div>
-            <div class="row">
-                <h2 class="date-time" id="current-date-time">
+                <div class="row date-time" id="current-date-time">
                     Date & Time
-                </h2>
+                </div>
             </div>
             <form class="change-city" id="search-form">
-                <div>
-                    <label for="search">Change Your City</label>
-                </div>
-                <input type="text" name="search" id="city-input" placeholder="Enter your city here" autocomplete="on" />
+                <input type="text" name="search" id="city-input" placeholder="Search for a city 🔍"
+                    autocomplete="off" />
                 <input type="submit" value="Search" />
             </form>
         </div>
-        <div class="col-5">
+        <div class="col-6">
             <div class="forecast">
                 <ul>
                     <li>

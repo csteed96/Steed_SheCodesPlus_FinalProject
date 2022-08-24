@@ -1,4 +1,3 @@
-.date-time,
 .first-box {
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
@@ -8,7 +7,6 @@
   border-color: black;
   border-radius: 20px;
   text-align: center;
-  padding-right: 50px;
   margin-bottom: 50px;
 }
 
@@ -22,16 +20,25 @@
 .current-city,
 .current-temp {
   font-size: 50px;
+}
+
+.current-temp {
+  padding-right: 50px;
+}
+.date-time {
+  font-size: 35px;
+  display: block;
+  text-align: center;
+}
+
+.current-city,
+.current-temp,
+.date-time {
   margin-bottom: 10px;
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
   margin-top: 10px;
-}
-.date-time {
   display: block;
-  min-width: 300px;
-  font-family: "Arima", cursive;
-  font-family: "Poppins", sans-serif;
 }
 
 ul {
