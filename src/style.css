@@ -1,17 +1,7 @@
-.col-8 {
-  font-family: "Arima", cursive;
-  font-family: "Poppins", sans-serif;
-}
-.col-4 {
-  font-family: "Arima", cursive;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  background-color: aliceblue;
-  border-radius: 35px;
-}
-
 .date-time,
 .current-city {
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
   background-color: rgb(252, 65, 50, 0.8);
   display: inline-block;
   border-style: outset;
@@ -25,6 +15,8 @@
 .current-city-geo {
   display: block;
   margin: 0 auto;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 .current-city {
@@ -32,10 +24,14 @@
   min-width: 300px;
   margin-bottom: 10px;
   display: block;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .date-time {
   display: block;
   min-width: 300px;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .current-temp {
   text-align: center;
@@ -43,11 +39,18 @@
   color: white;
   background-color: black;
   text-align: center;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 25px;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: aliceblue;
+  border-radius: 35px;
 }
 
 form {
@@ -60,6 +63,8 @@ form {
   background-color: darksalmon;
   text-align: center;
   border: 2px solid;
+  font-family: "Arima", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
