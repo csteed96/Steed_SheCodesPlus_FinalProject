@@ -20,16 +20,20 @@
 <div class="container">
     <div class="row">
         <div class="col-7">
-            <h1 class="current-city" id="city-name">
-                Current City
-            </h1>
-            <h2 class="date-time" id="current-date-time">
-                Date & Time
-            </h2>
-            <h2 class="current-temp">
-                <span id="current-temp">19</span>
-                <span class="units">C°</span>
-            </h2>
+            <div class="row first-box">
+                <div class="col current-city" id="city-name">
+                    Current City
+                </div>
+                <div class="col current-temp">
+                    <span id="current-temp">19</span>
+                    <span class="units">C°</span>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="date-time" id="current-date-time">
+                    Date & Time
+                </h2>
+            </div>
             <form class="change-city" id="search-form">
                 <div>
                     <label for="search">Change Your City</label>
@@ -70,9 +74,10 @@
             </div>
         </div>
     </div>
-    <div class="link">
-        <a href="https://github.com/csteed96/Steed_SheCodesPlus_FinalProject">Link to Github</a>
-    </div>
+</div>
+<div class="link">
+    <a href="https://github.com/csteed96/Steed_SheCodesPlus_FinalProject">Link to Github</a>
+</div>
 </div>
 </body>
 <script src="src/index.js"></script>
