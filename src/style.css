@@ -23,9 +23,11 @@
   text-transform: capitalize;
 }
 
-.current-temp {
-  padding-right: 50px;
+.current-weather,
+.wind-speed {
+  font-size: 35px;
 }
+
 .date-time {
   font-size: 35px;
   display: block;
@@ -34,7 +36,8 @@
 
 .current-city,
 .current-temp,
-.date-time {
+.date-time,
+.current-weather {
   margin-bottom: 10px;
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
