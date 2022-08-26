@@ -18,7 +18,8 @@
 }
 
 .current-city,
-.current-temp {
+.current-temp,
+.current-weather {
   font-size: 35px;
   text-transform: capitalize;
 }
