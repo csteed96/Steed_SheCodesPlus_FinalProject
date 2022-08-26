@@ -27,9 +27,11 @@ function displayCity(response) {
   let geoCity = document.querySelector("#city-name");
   let geoTemp = document.querySelector("#current-temp");
   let windSpeed = document.querySelector("#wind-speed");
+  let weatherDescription = document.querySelector("#weather-description");
   geoCity.innerHTML = response.data.name;
   geoTemp.innerHTML = Math.round(response.data.main.temp);
-  windSpeed.innerHTML = Math.round(response.data.wind.speed[0]);
+  windSpeed.innerHTML = Math.round(response.data.wind.speed);
+  weatherDescription.innerHTML = response.data.weather[0].description;
 }
 
 function searchCity(event) {
