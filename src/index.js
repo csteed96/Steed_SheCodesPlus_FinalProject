@@ -19,17 +19,19 @@ function handlePosition(position) {
   let geoLat = Math.round(position.coords.latitude);
   let geoLong = Math.round(position.coords.longitude);
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${geoLat}&lon=${geoLong}&&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayCity);
+  axios.get(apiUrl).then(displayCityData);
 }
 
-function displayCity(response) {
-  console.log(response);
-  let geoCity = document.querySelector("#city-name");
+function displayCityData(response) {
+  let cityName = document.querySelector("#city-name");
   let celsiusTemp = document.querySelector("#current-temp");
   let windSpeed = document.querySelector("#wind-speed");
   let weatherDescription = document.querySelector("#weather-description");
   let weatherIcon = document.querySelector("#icon");
-  geoCity.innerHTML = response.data.name;
+
+  celsiusTemperature = response.data.main.temp;
+
+  cityName.innerHTML = response.data.name;
   celsiusTemp.innerHTML = Math.round(response.data.main.temp);
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
   weatherDescription.innerHTML = response.data.weather[0].description;
@@ -40,13 +42,15 @@ function displayCity(response) {
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
-function searchCity(event) {
+function searchCity(city) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayCityData);
+}
+
+function userSubmit(event) {
   event.preventDefault();
-  cityInput = document.querySelector("#city-input");
-  let searchCity = document.querySelector("#city-name");
-  searchCity.innerHTML = cityInput.value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayCity);
+  let cityInput = document.querySelector("#city-input");
+  searchCity(cityInput.value);
 }
 
 function displayFahrenheitTemperature(event) {
@@ -71,7 +75,7 @@ let currentDateTime = document.querySelector("#current-date-time");
 currentDateTime.innerHTML = formatDate(now);
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchCity);
+form.addEventListener("submit", userSubmit);
 
 let apiKey = "98a10db88750045a71f589f4805bbe4d";
 
@@ -84,3 +88,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+searchCity("Atlanta");
