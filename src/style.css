@@ -19,7 +19,7 @@
 
 .current-city,
 .current-temp {
-  font-size: 50px;
+  font-size: 35px;
   text-transform: capitalize;
 }
 
