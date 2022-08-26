@@ -28,10 +28,16 @@ function displayCity(response) {
   let celsiusTemp = document.querySelector("#current-temp");
   let windSpeed = document.querySelector("#wind-speed");
   let weatherDescription = document.querySelector("#weather-description");
+  let weatherIcon = document.querySelector("#icon");
   geoCity.innerHTML = response.data.name;
   celsiusTemp.innerHTML = Math.round(response.data.main.temp);
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
   weatherDescription.innerHTML = response.data.weather[0].description;
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(event) {
@@ -46,7 +52,6 @@ function searchCity(event) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temp");
-
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
