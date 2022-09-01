@@ -49,6 +49,7 @@
 .forecast-box {
   list-style-type: none;
   padding-left: 25px;
+  margin-top: 50px;
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -63,7 +64,7 @@ form {
   padding: 10px;
   font-size: 20px;
   border-radius: 35px;
-  background-color: darksalmon;
+  background-color: #aed1ff;
   text-align: center;
   border: 2px solid;
   font-family: "Arima", cursive;
@@ -86,6 +87,7 @@ body {
 
 .forecast-box {
   border: 2px solid;
+  display: block;
 }
 .forecast-date,
 .forecast-temperature {
