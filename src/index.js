@@ -15,6 +15,28 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  forecastHTML =
+    forecastHTML +
+    `
+     <div class="col-2">
+        <div class="forecast-date">
+            Monday
+        </div>
+        <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="">
+        <div class="forecast-temperature">
+            <span class="min-forecast-temp">18°</span>
+            <span class="max-forecast-temp">20°</span>
+        </div>
+      </div>`;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function handlePosition(position) {
   let geoLat = Math.round(position.coords.latitude);
   let geoLong = Math.round(position.coords.longitude);
@@ -90,3 +112,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Atlanta");
+displayForecast();
