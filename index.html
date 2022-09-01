@@ -19,11 +19,10 @@
 </head>
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-8 content">
             <div class="row first-box">
                 <div class="col current-city" id="city-name">
                 </div>
-
                 <div class="col-4 current-temp">
                     <img src="" alt="Clear" id="icon" />
                     <span id="current-temp">19</span>
@@ -46,36 +45,22 @@
                     autocomplete="off" />
                 <input type="submit" value="Search" />
             </form>
-        </div>
-        <div class="col-6">
-            <div class="forecast">
-                <ul>
-                    <li>
-                        <h3>
-                            🌞 Monday (High/Low)
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            ⛈️ Tuesday (high/Low)
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            🌞 Wednesday (High/Low)
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            ⛈️ Thursday (High/Low)
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            🌞 Friday (High/Low)
-                        </h3>
-                    </li>
-                </ul>
+
+            <div class="row">
+                <div class="forecast-box">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="forecast-date">
+                                Monday
+                            </div>
+                            <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="">
+                            <div class="forecast-temperature">
+                                <span class="min-forecast-temp">18°</span>
+                                <span class="max-forecast-temp">20°</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
