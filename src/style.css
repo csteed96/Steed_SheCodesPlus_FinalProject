@@ -2,12 +2,12 @@
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
   background-color: #ffaefa;
-  border-style: outset;
   border: 3px solid;
   border-color: black;
   border-radius: 20px;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 25px;
 }
 
 .current-city-geo {
@@ -18,20 +18,18 @@
 }
 
 .current-city {
-  font-size: 50px;
+  font-size: 45px;
   text-transform: capitalize;
   padding-top: 10px;
+  padding-right: 0px;
+  margin-left: 30px;
 }
 
 .current-temp,
-.current-weather {
-  font-size: 35px;
-  text-transform: capitalize;
-}
-
 .current-weather,
 .wind-speed {
-  font-size: 35px;
+  font-size: 25px;
+  text-transform: capitalize;
 }
 
 .date-time {
@@ -48,7 +46,6 @@
   font-family: "Arima", cursive;
   font-family: "Poppins", sans-serif;
   margin-top: 10px;
-  display: block;
 }
 
 .forecast-box {
@@ -92,7 +89,8 @@ body {
 
 .forecast-box {
   border: 2px solid;
-  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .forecast-date,
 .forecast-temperature {
@@ -106,4 +104,17 @@ body {
 
 .units {
   font-size: smaller;
+}
+
+.current-temp {
+  padding-left: 0px;
+}
+
+.wind-speed {
+  line-height: inherit;
+}
+
+.weather-icon-forecast {
+  display: block;
+  margin: 0 auto;
 }
